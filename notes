@@ -1,0 +1,11 @@
+for origin desktop:
+   convert '*.png' -resize "300x300" origin%03d.png
+origin phone:
+   convert '*.png' -resize "150x150" origin%03d.png
+
+for thumb phone:
+   convert '*.png[50x]' origin%03d.png
+thumb desktop:
+   same size as origin
+ 
+for original, have 1 size for computers and big screens, second size for phones.
